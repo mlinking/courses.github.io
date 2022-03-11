@@ -1,196 +1,206 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Je suis Lingbo.</title>
-<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-<style type="text/css">
-<!--
-body {
-	font: 100% Verdana, Arial, Helvetica, sans-serif;
-	background: #666666;
-	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
-	padding: 0;
-	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
-	color: #000000;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Tips for Elastic layouts 
-1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
-2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
-3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
-*/
-.oneColElsCtrHdr #container {
-	width: 60em;  /* this width will create a container that will fit in an 800px browser window if text is left at browser default font sizes */
-	background: #FFFFFF;
-	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
-	border: 1px solid #000000;
-	text-align: left; /* this overrides the text-align: center on the body element. */
-}
-.oneColElsCtrHdr #header {
-	background: #DDDDDD;
-	padding: 0 10px 0 20px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
-	text-align: center;
-} 
-.oneColElsCtrHdr #header h1 {
-	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
-	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
-}
-.oneColElsCtrHdr #mainContent {
-	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
-	background: #FFFFFF;
-}
-.oneColElsCtrHdr #footer { 
-	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
-	background:#DDDDDD;
-} 
-.oneColElsCtrHdr #footer p {
-	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
-	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
-}
--->
-</style>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Courses taught so far</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
 </head>
 
-<body class="oneColElsCtrHdr">
+<body>
 
-<div id="container">
-  <div id="header">
-    <table width="933" border="0">
-  <tr>
-    <td width="595"><img src="imgs/ME2015.jpg" alt="Blocked at DaBa Mountain" width="593" height="297" /></td>
-    <td width="328" valign="middle"><p><strong>Dr. LingBo Kong</strong> <a href="default_Zh.html"> 中文版</a></p>
-      <p>School of Software Engineering<Br>
-      YiFu Building, West Wing 809,<Br>
-      Beijing JiaoTong University (BJTU),<Br>
-      Beijing 100044, <strong>CHINA</strong></p>
-      <p>Tel: +86-10-51687357<Br>
-      Fax: +86-10-51687356</p>
-      <p>You can contact me <a href="mailto:mLinking@126.com">here</a> <a href="default_Zh.html"></a></p></td>
-  </tr>
-</table>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active" id="homeNav">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item" id="coursesNav">
+            <a class="nav-link" href="#courses">Courses</a>
+          </li>
+          <li class="nav-item" id="ZhwebNav">
+            <a class="nav-link" href="index_Zh.html">[中文版]</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <!-- end #header --></div>
-  <div id="mainContent">
-    <p><strong>Lingbo Kong</strong> is now   assistant professor of  School of Software Engineering at Beijing JiaoTong University. His research interests evolved accordingly. The study for Ph.D degree is mainly in the fields of database and information systems. After that, I want to do some research more interesting, particularly in developing techniques for efficiently processing the new data type derived from real applications, such as <a href="Researches/XKS/default.html" title="XML IR" target="_new">XML data retrieval</a>, Multimedia retrieval (<a href="Researches/La VITA/default.html" title="La VITA" target="_new">La V.I.T.A</a>) and bioinformatics data. And subseqtently I also dived into the regime of Data Analytics (Data Mining, Machine Learning etc.).</p>
-    <p>And thereafter, my teaching experience is a llittle ambitious - you can check from the following teaching list. Since I like teaching, I spend a lot to reform the courses so as to help students to improve their capability. For instance, I focus more on the design and implementation of (R)DBMS in &quot;(R)DBMS Practice&quot; course. While I try hard to provide students a big picture understanding about Data Analytics, which covers Optimization, Review of Statistics, and Reorganization of Machine Learning algorithms. </p>
-    <hr />
-    <ul>
-      <li><a href="Bio.html" title="Biography" target="_blank">Biography</a></li>
-      <li><strong>Courses</strong></li>
-   	  <ul>
-      		
-   		  <li><span style="color: #FF0000">Operating System</span>
-<ul>
-            <li>(2010),(2011),(2012.ZH+EN),(2013.ZH+EN), (2014.EN), (2015.EN),(2016.EN),(2017.EN),,(2018.EN),(2019.EN),(2020-Aut.EN),(2021-Aut.ZH)<img src="imgs/Animated-PinnedNote-New.gif" width="77" height="50"  alt=""/>   		  </li>
-            </ul>
-   		  </li>
-          <li><span style="color: #FF0000">Business Intelligence</span>
-<ul>
-   		    <li>(2011, Master: Data Analysis for Big Data),  (2013, Master: Data Analysis for Big Data),(2014 for Junior [ZH,EN]),(2015 for Junior [ZH,EN]),(2017 for Junior [ZH,EN]),(2018 for Junior[ZH,EN]),(2019 for Junior[ZH,EN]),(2020 for Junior.ZH-Spr),(2021-Spr.ZH)<img src="imgs/Animated-PinnedNote-New.gif" width="77" height="50"  alt=""/></li>
-	        </ul>
-	      </li>
-   		  <li><span style="color: #FF0000">Distributed Computing(I prefer to call it as &quot;HPC - High Performance Computing&quot;）[Master] </span>
-   		    <ul>
-   		      <li>(2019-Spr.ZH), (2019-Aut.ZH)</li>
-	        </ul>
-   		    <span style="color: #FF0000">Practice for DBMS's Design and Implementation</span>
-            <ul>
-              <li>(2016.EN), (2017.EN),(2018.EN),(2019.ZH),(2020-Aut.ZH),(2021-Aut.ZH)<img src="imgs/Animated-PinnedNote-New.gif" width="77" height="50"  alt=""/></li>
-            </ul>
-	      </li>
-	      <li><span style="color: #FF0000">Report about Big Data</span> (2017-05-24) in Mss. ZHANG Hong-Yan's course:
-            <ul>
-              <li>&quot;Research Methodology for S.E&quot;</li>
-            </ul>
-        </li>
-        <li><span style="color: #FF0000">Introduction to Programming and CS IoCS</span>
-          <ul>
-            <li>(2013.EN),(2015.ZH-WeiHai)</li>
-          </ul>
-        </li>
-        <li style="color: #FF0000">Software Engineering</li>
-          <li><span style="color: #FF0000">Engineer Mathematics</span>: Reunderstand what you have learned</li>
-        <li><span style="color: #FF0000">Computer &amp; Related Issues</span> (En)
-<ul>
-	        <li>(2009), (2010), (2011.EN), (2012.EN)</li>
-          </ul>
-        </li>
-   		  <li><span style="color: #FF0000">Academic Skills</span> for Software Engineering Students
-<ul>
-   		    <li>(2010),(2011)</li>
-	        </ul>
-	      </li>
-   		  <li><span style="color: #FF0000">Data Structure &amp; Algorithm</span> (2010)</li>
-   		  <li></li>
-   		</ul>
-      <li><strong>Researches</strong>
-        <ul>
-          <li><a href="Researches/La VITA/default.html" title="La VITA" target="_blank">La VITA</a> (Video, Image, Text and Audio)</li>
-          <li>XKS - XML (eXtensible Markup Language) Keyword Search</li>
-        </ul>
-      </li>
-      <li><a href="Pubs.html" target="_blank">Selected publications</a>
-        <ul>
-          <li></li>
-        </ul>
-      </li>
-      <li>Academic kits
-        <ul>
-          <li>Tools &amp; Books for Mathematics
-            <ul>
-              <li>Mathematica</li>
-              <li>MatLab</li>
-              <li></li>
-            </ul>
-          </li>
-          <li>Scientific typesetting
-            <ul>
-              <li>Here is a slide about <a href="LaTeX/FTLB NAP/index.html" target="_blank">LaTeX</a> composed before </li>
-              <li>This is the <a href="LaTeX/For the LaTeX birds-C/index.html" title="For the LaTeX birds (Complement)" target="_blank">Complement</a> for the above LaTeX material</li>
-            </ul>
-          </li>
-          <li>For research
-            <ul>
-              <li><a href="http://www.informatik.uni-trier.de/%7Eley/db/" target="_blank">DBLP</a></li>
-              <li><a href="http://www.cc.gatech.edu/people/home/guofei/CS_ConfRank.htm" target="_blank">CS Conference Ranking</a></li>
-              <li><a href="http://citeseer.ist.psu.edu/impact.html" target="_blank">Impact of some CS research materials</a></li>
-              <li><a href="http://academic.research.microsoft.com/" title="Academic search" target="_blank">Microsoft Academic search</a></li>
-            </ul>
-          </li>
-          <li> </li>
-        </ul>
-      </li>
-      <li><strong>Good books</strong>!!
-        <ul>
-          <li><a href="Books/Books for Math.html" title="Good books for Math" target="_blank">Mathematics</a></li>
-          <li><a href="Books/Books for CS.html" title="Good books for CS" target="_blank">Computer science</a></li>
-          <li><a href="Books/Books for Life.html" title="Books for life" target="_blank">Books for life</a></li>
-          <li>Doing research</li>
-        </ul>
-      </li>
-      <li><a href="UsefulLinks/Useful links.html" target="_blank">Useful links</a>
-        <ul>
-          <li><a href="http://www.nationalgeographic.com/" target="_blank">National Geographic</a> : To see the world in pictures</li>
-          <li>            <a href="http://www.cng.com.cn/" target="_blank">China Geographic</a> : To see China in pictures</li>
-          <li><a href="http://www.howstuffworks.com/" target="_blank">Howstuffworks</a> : It is <strong>COOL</strong>!</li>
-          <li><a href="http://sourceforge.net/" target="_blank">Source Forge</a> : Lots of source codes</li>
-          <li><a href="http://www.ctan.org/" target="_blank"> LaTeX</a> : CTAN - The Comprehensive TeX Archive Network</li>
-          <li></li>
-        </ul>
-      </li>
-      <li><strong>For FUN</strong>
-  <ul>
-    <li><a href="Fun/Children's memvoir/index.html" title="Memory of the children" target="_blank">Memory of the children</a></li>
-    <li><a href="Fun/Life in pictures/index.html" title="Life in pictures" target="_blank">Life in pictures</a></li>
-    <li><a href="Fun/beautiful life/index.html" title="For the bewutiful life" target="_new">For the beautiful life</a></li>
-    </ul>
-      </li>
-    </ul>
+  <!-- Header -->
+  <header class="bg-secondary py-3">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-5 text-white mt-5 mb-2"><font color="orange">Programming, OS, DBMS, Data Analytics, HPC, ...</font></h1>
+          <p class="lead mb-4 text-white-50">Dive into the gorgeous journey to pursue the wisdom deeper.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row section" id="home">
+      <div class="col-md-12">
+        <h2> <font color="red">Overview</font></h2>
+        <hr>
+        <p>I love <b>TEACHING</b> cause it's a GREAT way to improve myself a lot! During my teaching, I tried to follow the principles below to  teach the courses well:</p>
+        <p>&mdash; <b>Big picture</b> of the related topics for theories and practices.</p>
+        <p>&mdash; Illustrate the topics always with <b>intuitive examples</b>.</p>
+        <p>&mdash; Introduce real and <b>high-level applications</b> into classes.</p>
+        <p>This web is used to share the courses I taught so far, which is a souvenir for myself.</p>
+
+      </div>
+     
+    </div>
+
+    <div class="row section" id="courses">
+      <div class="col-md-12">
+        <h2><font color="red">Courses</font></h2>
+		<hr>
+		<table id="scheduleTable">
+          <tbody>
+            <tr>
+              <th id="eventCol">Course Name</th>
+              <th>Description</th>
+			  <th style="text-align: center;">Galery</th>
+            </tr>
+            
+			
+            <tr>
+              <td><b>A First Course for Computer Science</b></td>
+              <td>
+                <p>For most CS students in China, it's important for them to successfully jump into the CS's philosophy (also called <b>Computational Thinking</b> in recent years). </p>
+				
+				<p>This course aims to illustrate the freshmen a whole picture covering the necessary topics which are helpful for them to understand CS with a framework (shown in right).</p>
+              </td>
+			  <td style="text-align: center;">
+                <a href="img/FirstforCS.png" target="blank"><img src="img/FirstforCS.png" alt="First Course for CS" width="130" height="130" /></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>An Intuitive Study for Mathematics</b></td>
+              <td>
+                Math is critical for the CS. This course demonstrates the students a intuitive way to understand the related topics helpful for them to go deeper in later study and research. By focusing on the introduction of <b>ideas</b> instead of the tedious math formulae. 
+              </td>
+			  <td>
+                <a href="img/EngMath.png" target="blank"><img src="img/EngMath.png" alt="Engineering Math" width="240" /></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>Operating System</b></td>
+              <td>
+                <p>As a primary and critical course for CS, many classic courses have been proposed arround the world. My course trys to demonstrate the related topcis in an intuitive way, and also adopt advanced topics so as to cover the latest progresses in HPC, Big Data and Deep Learning etc. Of course all topics are derived from the OS view. </p>
+				
+				<p>There are two parts in this course:</p>
+				<ul>
+					<li> Fundamental topics derived from Uni-processor model (von Neumann architecture)</li>
+					<li> Advanced topics derived from the distributed model (which can be also applied to Big Data, and Clouding)</li>
+				</ul>
+              </td>
+			  <td style="text-align: center;">
+                <a href="img/OS.png" target="blank"><img src="img/OS.png" alt="First Course for CS" width="240" /></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>Design and Implementation of DBMS <br>- Taking RDBMS as the instance</b></td>
+              <td>
+                <p>As one of the 3 classical courses in CS (the other twoo are Compiler and OS), many classic courses have been proposed arround the world. My course trys to demonstrate the related topcis in an intuitive way, and also adopt advanced topics so as to cover the latest progresses in Big Data and Data Analytics etc.</p>
+				
+				<p>There are two parts in this course:</p>
+				<ul>
+					<li> Fundamental topics derived from shared everything model (von Neumann architecture)</li>
+					<li> Advanced topics derived from the shared nothing model (which could be applied to distributed data management system, Big Data, and Clouding)</li>
+				</ul>
+              </td>
+			  <td style="text-align: center;">
+                <a href="img/DBMS.png" target="blank"><img src="img/DBMS.png" alt="DBMS" width="240" /></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b><a href="courses/datanalytics.html" target = "blank">Data Analytics under the Business View</a></b></td>
+              <td>
+                <p>With the explosion of Deep Learning, AI(Artifacial Intelligence), ML (Machine Learning) and Deep Learning etc. are becoming more and more hot in recent years. This course tries to cover those related topics in an interesting way which adopts the business thinking as the framework. </p>
+				
+				<p>To do so, this course provides a big picture as follows:</p>
+				<ul>
+					<li> Overview of Business Thinking (simplified MBA)</li>
+					<li> Evolution of AI (clarify the relationship for AI, ML/DM, DL etc.)</li>
+					<li> A little Optimization (a key to understand the related ML algorithms)</li>
+					<li> Data Analytics methods/algorithms from Statistics and ML</li>
+					<li> Practical skills in real big e-commerce (to cater for "秒杀" and "Precision adv.")</li>
+				</ul>
+				
+              </td>
+			  <td style="text-align: center;">
+                <a href="img/Datanalytics.png" target="blank"><img src="img/Datanalytics.png" alt="Data Analytics under Business View" width="240" /></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td><b>Large Scale Data Computing <br>- HPC, Big Data, Deep Learning and beyond</b></td>
+              <td>
+                <p>To some extent, the endeavour to pursue more powerful computing capability is all over the history of our humankind. With the invention of computers, many more different computing architectures are proposed besides the famous von Neumann architecture, which are triggered by large scale data computing like HPC and Big Data etc. It's definitely a <b>MUST</b> course for CS students to know/understand/master the related topics in a whole picture way. </p>
+				
+				<p>To do so, this course provides a big picture as follows in three parts:</p>
+				<ul>
+					<li> Overview of large scale data computing with an intuitive example(Evolution of computing architectures, issues of distributed OS, etc.)</li>
+					<li> Programming frameworks (MPI, CUDA/GPU, OpenMP, Big Data etc.)</li>
+					<li> Practical skills in real big e-commerce (focusing on more details for "秒杀")</li>
+				</ul>				
+              </td>
+			  <td style="text-align: center;">
+                <a href="img/LargeScaleDataComputing.png" target="blank"><img src="img/LargeScaleDataComputing.png" width="240" /></a>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+	
   </div>
-  <div id="footer">
-    <p align="right">Updated @  Nov 15, 2018</p>
-  <!-- end #footer --></div>
-<!-- end #container --></div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; 喜欢苹果的梨</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="main.js"></script>
+
 </body>
+
 </html>
