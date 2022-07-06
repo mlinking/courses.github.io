@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Data Analytics under the Business View</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/main.css" rel="stylesheet">
+
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active" id="homeNav">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item" id="scheduleNav">
+            <a class="nav-link" href="#schedule">Schedule</a>
+          </li>
+          <li class="nav-item" id="logisticsNav">
+            <a class="nav-link" href="#logistics">Logistics</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-secondary py-3">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-5 text-white mt-5 mb-2"><font color="orange">Large Scale Computing</font></h1>
+          <p class="lead mb-4 text-white-50">The course everyone should learn!</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row section" id="home">
+      <div class="col-md-12">
+        <h2><font color="red">Course Overview</font></h2>
+        <hr>
+        <p>Large scale computing is now widespread used in many domains, covering HPC (High performance Computing), Deep Learning, and the Internet based platform companies (Like Amazon, Google, Alibaba, MeiTuan, JD, ...). This course tries to cover those  topics in an interesting way providing a big picture as follows:</p>
+				<ul>
+					<li> Introduction with 3 applications (Weather Forecasting, CNN/DL, MiaoSha)</li>
+					<li>Part I Fundamentals
+					  <ul>
+					    <li> How to solve Weather Forecasting based on a simplified Heat Equation</li>
+					    <li>What does a program for large scale computing look like?</li>
+					    <li>Evolution of computing systems (SMP, Vector Processor, GPU, MPP, Cluster, etc.)</li>
+					    <li>System software to support the execution of the  programs for large scale computing</li>
+				      </ul>
+				    </li>
+					<li>Part II Programming for high performance single computer
+					  <ul>
+					    <li>OpenMP, MPI, CUDA (CNN/DL is shown here), MR, Spark etc.</li>
+				      </ul>
+					</li>
+					<li> Part III Programming for High performance system with many computers
+					  <ul>
+					    <li>Practical skills in real big e-commerce (to cater for "秒杀" and "Precision adv.")</li>
+				      </ul>
+				    </li>
+					<li>Part IV Appendices</li>
+				</ul>
+      </div>
+    </div>
+
+    <div class="row section" id="schedule">
+      <div class="col-md-12">
+        <h2><font color="red">Schedule</font></h2>
+        <table id="scheduleTable">
+          <tbody>
+            <tr>
+              <th id="eventCol">Lectures</th>
+              <th>Description</th>
+              <th>Course Materials</th>
+            </tr>
+            <tr>
+              <td>1 Introduction</td>
+              <td>
+                <p><b>Why and how do I demonstrate Large Scale Computing?</b>
+              </p>
+              <p>HPC, DL, Business systems ... are now merging as one - Large Scale Computing</p></td>
+              <td>[<a href="largeScaleComputing/01 Introduction.pdf" title="Introduction" target="_blank">Introduction</a>]</td>
+            </tr>
+            <tr>
+              <td>2 A Weather Forecasting</td>
+              <td>
+                <ul>
+					<li>Brief history of Weather forcasting</li>
+					<li>Numeric computing for Weather forecasting</li>
+					<li>Sequential code in Python</li>
+					<li>What does a LSC program look like</li>
+				</ul>
+              </td>
+              <td>
+              [<a href="largeScaleComputing/02 HPC (with Scientific Computing)-A Weather Forecasting.pdf" target="_blank">A Weather Forecasting</a><a href="datanalytics/02MBA-So called business.pdf" target="_blank"></a>][<a href="largeScaleComputing/02 HPC (with Scientific Computing)-B Python.pdf" target="_blank">in Python</a>] </td>
+            </tr>
+
+            <tr>
+              <td>3 LSC systems</td>
+              <td>
+				<ul>
+					<li>3 trends to reach high performance computer systems</li>
+		      </ul></td>
+              <td>
+                [<a href="largeScaleComputing/03 Evolution of HPComputers.pdf" target="_blank">Evolution of LSC systems</a>]
+              </td>
+            </tr>
+
+            <tr>
+              <td>4 DOS?</td>
+              <td><ul> 
+			    <li>Distributed OS? - kind a ...</li>
+			    <li>Modern OS is OK for single computer system - multi-core or with GPGPU</li>
+			    <li>To support the concurrent execution of many programs in MPP/Cluster, it's quite different! - Protocol stack</li>
+				</ul>
+              </td>
+              <td>
+              [<a href="largeScaleComputing/04 Distributed OS[A].pdf" target="_blank">DOS?-Protocol stack</a><a href="datanalytics/04History of DA-pursue wisdom.pdf" target="_blank"></a>][<a href="largeScaleComputing/04 Distributed OS[B]-other Distributed systems.pdf" target="_blank">DOS?-other examples</a>] </td>
+            </tr>
+			
+<!--             <tr>
+              <td>Lecture 18</td>
+              <td>
+                <b>Guest Lecture</b>
+              </td>
+              <td>
+              </td>
+            </tr> -->
+
+            <tr>
+              <td>5 Overview of programming frameworks</td>
+              <td>
+                <b>OpenMP, MPI, CUDA, MR/Spark/... from Big Data</b>
+              </td>
+              <td>
+				[Overview]
+              </td>
+            </tr>
+
+
+            <tr>
+              <td>5 Brief OpenMP</td>
+              <td>Brief OpenMP</td>
+              <td>
+				[OpenMP]
+              </td>
+            </tr>
+
+
+            <tr>
+              <td>5 Brief MPI</td>
+              <td>Brief MPI</td>
+              <td>
+				[MPI]
+              </td>
+            </tr>
+
+            <tr>
+              <td>5 Brief CUDA</td>
+              <td>Brief CUDA</td>
+              <td>
+				[CUDA]
+              </td>
+            </tr>
+			
+
+            <tr>
+              <td>5 Brief Big Data programming</td>
+              <td>Brief Big Data programming</td>
+              <td>
+				[MR][Spark][...]
+              </td>
+            </tr>
+
+            <tr>
+              <td>6 &quot;秒杀&quot; - Second Kill</td>
+              <td>
+                <b>System Integration programming to solve &quot;Second Kill&quot;</b>
+              </td>
+              <td>
+			  [<a href="largeScaleComputing/06 [A] Big e-commerce system-A(HUGE concurrency)[SPOC].pdf" target="_blank">Second Kill</a>] </td>
+            </tr>
+
+            <tr>
+              <td>6 Brief Computing Adv</td>
+              <td>Brief Computing Adv</td>
+              <td>
+			  [<a href="largeScaleComputing/06 [B] Big e-commerce system-B(Computational Adv)[SPOC].pdf" target="_blank">Brief Computing Adv</a>] </td>
+            </tr>
+
+            <tr>
+              <td>7 Review</td>
+              <td>
+                <b>Review</b>
+              </td>
+              <td>
+				[Review]
+              </td>
+            </tr>
+
+	
+		
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row section" id="logistics">
+      <div class="col-md-12">
+        <h2 ><font color="red">Course Logistics and Policies</font></h2>
+        <hr>
+
+        <p><b>Grading</b> Projects: 60% (4 times), Research Paper Reading: 20%, New tech investigation: 20%.</p>
+
+        <b>Textbook</b> There is no required textbook, but for students who want additional resources, we recommend the following two:
+        <ul>
+          <li>John D. Cox 闻新宇 贾喆 朱清照. 风暴守望者 天气预报风云史 [M]. Wiley. 2002.</li>
+          <li>Thomas Sterling, Matthew Anderson, Maciej Brodowicz. High Performance Computing: Modern Systems and Practices [M]. 2017.</li>
+          <li>陈国良 . 并行计算：结构、算法、编程 [M]. 高等教育出版社. 2003.</li>
+          <li>Andrew S Tanenbaum, Maarten Van Steen. Distributed Systems 3rd edition . 2017.</li>
+          <li>厄兹叙 (M.Tamer Ozsu), Patrick Valduriez 著. 周立柱, 范举 译. 分布式数据库系统原理. 清华大学出版社. 2014.</li>
+          <li>于戈 申德荣等. 分布式数据库系统：大数据时代新型数据库技术（第2版）.机械工业出版社. 2021. </li>
+		  <li>Ian Goodfellow, Yoshua Bengio, Aaron Courville. Deep Learning. </li>
+		  <li>刘鹏, 王超 . 计算广告. 人民邮电出版社. 2015. </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; 喜欢苹果的梨</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../main.js"></script>
+
+</body>
+
+</html>
